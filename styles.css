@@ -54,7 +54,7 @@ ul { list-style-position: inside; }
 .grid-2, .grid-3, .stats-grid, .forecast-grid, .timeline { display: grid; gap: 22px; }
 .grid-2 { grid-template-columns: repeat(2,1fr); }
 .grid-3, .stats-grid { grid-template-columns: repeat(3,1fr); }
-.forecast-grid { grid-template-columns: repeat(3,1fr); }
+.forecast-grid { grid-template-columns: repeat(4,1fr); }
 .timeline { grid-template-columns: repeat(3,1fr); }
 .card, .chart-card, .forecast-card, .timeline-item { padding: 27px; border: 1px solid var(--borde); border-radius: 18px; background: var(--blanco); box-shadow: var(--sombra); }
 .card-icon { width: 54px; height: 54px; display: grid; place-items: center; margin-bottom: 18px; border-radius: 16px; background: #ddf4f0; color: var(--azul-profundo); font-size: 1.5rem; }
