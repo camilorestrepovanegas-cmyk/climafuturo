@@ -14,6 +14,4 @@ La página `pronosticos.html` incluye un filtro por probabilidad de lluvia. El e
 - `css/styles.css`
 - `js/script.js`
 
-## Uso de inteligencia artificial
-
 Microsoft Copilot se utilizó como apoyo para organizar, revisar e integrar la funcionalidad JavaScript. La publicación, comprobación y presentación del proyecto corresponden al responsable de la actividad.
