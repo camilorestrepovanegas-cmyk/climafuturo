@@ -1,4 +1,4 @@
-# ClimaFuturo - Actividad Colaborativa 3
+# ClimaFuturo 
 
 Proyecto académico sobre estadísticas y pronósticos climáticos.
 
