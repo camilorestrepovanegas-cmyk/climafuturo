@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta indicadores y representaciones educativas de estadísticas climáticas en ClimaFuturo.">
+  <title>ClimaFuturo | Estadísticas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="brand" href="index.html" aria-label="ClimaFuturo, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">◉</span>
+        <span>ClimaFuturo</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link active" href="estadisticas.html" aria-current="page">Estadísticas</a></li>
+          <li><a class="nav-link" href="pronosticos.html">Pronósticos</a></li>
+          <li><a class="nav-link" href="index.html#aprende">Aprende</a></li>
+          <li><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> / Estadísticas</p>
+        <h1 id="page-title">Estadísticas climáticas</h1>
+        <p>Explora una demostración visual de cómo se organizarán los indicadores históricos, los filtros y las explicaciones dentro de ClimaFuturo.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="consulta-title">
+      <div class="container">
+        <div class="section-heading left">
+          <h2 id="consulta-title">Consulta de indicadores</h2>
+          <p>Los controles representan la estructura prevista. En esta etapa de HTML y CSS, los filtros son elementos visuales y todavía no procesan datos con JavaScript.</p>
+        </div>
+
+        <form class="filters" action="#resultado" method="get">
+          <div class="form-group">
+            <label for="indicador">Indicador</label>
+            <select id="indicador" name="indicador">
+              <option>Temperatura</option>
+              <option>Emisiones de CO₂</option>
+              <option>Nivel del mar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="periodo">Periodo</label>
+            <select id="periodo" name="periodo">
+              <option>1980 - 2000</option>
+              <option>2001 - 2020</option>
+              <option>2021 - actualidad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="region">Región</label>
+            <select id="region" name="region">
+              <option>Global</option>
+              <option>América Latina</option>
+              <option>Colombia</option>
+            </select>
+          </div>
+          <div class="form-group" style="display:flex; align-items:end;">
+            <button class="btn btn-primary" type="submit" style="width:100%;">Actualizar vista</button>
+          </div>
+        </form>
+
+        <div class="grid-2" id="resultado">
+          <article class="chart-card" aria-labelledby="grafica-title">
+            <h3 id="grafica-title">Ejemplo de evolución por periodos</h3>
+            <p>Representación académica para evidenciar la organización visual del contenido.</p>
+            <div class="chart" role="img" aria-label="Gráfica demostrativa de barras con una tendencia ascendente entre 1980 y 2020">
+              <div class="bar" style="height:30%;"><span>1980</span></div>
+              <div class="bar" style="height:38%;"><span>1990</span></div>
+              <div class="bar" style="height:49%;"><span>2000</span></div>
+              <div class="bar" style="height:62%;"><span>2010</span></div>
+              <div class="bar" style="height:77%;"><span>2020</span></div>
+            </div>
+            <p class="legend">La altura de las barras es ilustrativa y no corresponde a una base de datos oficial.</p>
+          </article>
+
+          <aside class="card" aria-labelledby="interpretacion-title">
+            <div class="card-icon" aria-hidden="true">↗</div>
+            <h3 id="interpretacion-title">Interpretación de la tendencia</h3>
+            <p>En la versión final, este espacio explicará qué significa el comportamiento de la gráfica seleccionada y cuáles son sus principales implicaciones.</p>
+            <ul>
+              <li>Nombre y unidad del indicador.</li>
+              <li>Periodo y territorio seleccionado.</li>
+              <li>Descripción de la tendencia observada.</li>
+              <li>Fuente y fecha de actualización.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="tabla-title">
+      <div class="container">
+        <div class="section-heading left">
+          <h2 id="tabla-title">Organización prevista de los datos</h2>
+          <p>La tabla demuestra cómo se presentará información complementaria a las gráficas.</p>
+        </div>
+        <div class="data-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Indicador</th>
+                <th scope="col">Unidad prevista</th>
+                <th scope="col">Visualización</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Temperatura</td><td>Grados Celsius</td><td>Serie temporal</td><td>Demostración</td></tr>
+              <tr><td>Emisiones</td><td>Toneladas de CO₂</td><td>Barras comparativas</td><td>Demostración</td></tr>
+              <tr><td>Nivel del mar</td><td>Milímetros</td><td>Línea acumulada</td><td>Demostración</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note" style="margin-top:28px;">
+          <strong>Nota académica:</strong> los ejemplos de esta página muestran la estructura y el diseño. Antes de publicar cifras reales se deberán verificar, citar y fechar las fuentes utilizadas.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>¿Cómo podrían evolucionar estas variables?</h2>
+            <p>Consulta la página de pronósticos y compara escenarios para 2030 y 2050.</p>
+          </div>
+          <a class="btn btn-secondary" href="pronosticos.html">Ver pronósticos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="footer-about">
+        <h2 id="footer-about">ClimaFuturo</h2>
+        <p>Proyecto educativo sobre estadísticas, tendencias y escenarios relacionados con el cambio climático.</p>
+      </section>
+      <nav aria-label="Navegación del pie de página">
+        <h3>Explorar</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="estadisticas.html">Estadísticas</a></li>
+          <li><a href="pronosticos.html">Pronósticos</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="footer-project">
+        <h3 id="footer-project">Proyecto académico</h3>
+        <p>Desarrollado por Camilo Restrepo Vanegas.</p>
+        <p>Institución Universitaria Remington.</p>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ClimaFuturo. Sitio elaborado con fines académicos.</p>
+    </div>
+  </footer>
+</body>
+</html>
