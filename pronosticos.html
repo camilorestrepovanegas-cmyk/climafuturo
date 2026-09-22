@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compara escenarios educativos de pronósticos climáticos para 2030 y 2050 en ClimaFuturo.">
-  <title>ClimaFuturo | Pronósticos</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Consulta el pronóstico semanal educativo de temperatura y probabilidad de lluvia en ClimaFuturo.">
+  <title>ClimaFuturo | Pronóstico semanal</title>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
@@ -20,7 +20,7 @@
         <ul class="nav-list">
           <li><a class="nav-link" href="index.html">Inicio</a></li>
           <li><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
-          <li><a class="nav-link active" href="pronosticos.html" aria-current="page">Pronósticos</a></li>
+          <li><a class="nav-link active" href="/pronosticos" aria-current="page">Pronóstico semanal</a></li>
           <li><a class="nav-link" href="index.html#aprende">Aprende</a></li>
           <li><a class="nav-link" href="index.html#contacto">Contacto</a></li>
         </ul>
@@ -31,17 +31,17 @@
   <main id="contenido">
     <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
-        <p class="breadcrumb"><a href="index.html">Inicio</a> / Pronósticos</p>
-        <h1 id="page-title">Pronósticos y escenarios</h1>
-        <p>Compara escenarios demostrativos para comprender cómo pueden comunicarse las proyecciones climáticas, sus supuestos y su incertidumbre.</p>
+        <p class="breadcrumb"><a href="index.html">Inicio</a> / Pronóstico semanal</p>
+        <h1 id="page-title">Pronóstico semanal</h1>
+        <p>Revisa las temperaturas y la probabilidad de lluvia de los próximos siete días en una sola vista.</p>
       </div>
     </section>
 
     <section class="section" aria-labelledby="escenarios-title">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow" style="color:#0B3C5D; border-color:#C9DAD7;">Horizontes 2030 y 2050</span>
-          <h2 id="escenarios-title">Pronóstico semanal</h2>
+          <span class="eyebrow" style="color:#0B3C5D; border-color:#C9DAD7;">Los próximos 7 días</span>
+          <h2 id="escenarios-title">El clima de la semana</h2>
           <p>Consulta una representación educativa de la probabilidad de lluvia para cada día.</p>
         </div>
 
@@ -54,7 +54,7 @@
               <option value="baja">Lluvia baja, menos del 50 %</option>
             </select>
           </div>
-          <p id="resultado-filtro" aria-live="polite">Se muestran todos los días disponibles. Resultados encontrados: 6.</p>
+          <p id="resultado-filtro" aria-live="polite">Se muestran todos los días disponibles. Resultados encontrados: 7.</p>
         </div>
 
         <div class="forecast-grid" id="lista-pronosticos">
@@ -104,6 +104,14 @@
             <strong>26 °C</strong>
             <span>Mínima: 17 °C</span>
             <p>Probabilidad de lluvia: 60 %</p>
+          </article>
+
+          <article class="forecast-card" data-lluvia="30">
+            <h3>Domingo</h3>
+            <p class="weather-icon" aria-hidden="true">🌤️</p>
+            <strong>28 °C</strong>
+            <span>Mínima: 18 °C</span>
+            <p>Probabilidad de lluvia: 30 %</p>
           </article>
         </div>
         <p id="sin-resultados" class="empty-message" hidden>No se encontraron días que cumplan el filtro seleccionado.</p>
@@ -181,7 +189,7 @@
         <ul class="footer-links">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="estadisticas.html">Estadísticas</a></li>
-          <li><a href="pronosticos.html">Pronósticos</a></li>
+          <li><a href="/pronosticos">Pronóstico semanal</a></li>
         </ul>
       </nav>
       <section aria-labelledby="footer-project">
@@ -194,6 +202,6 @@
       <p>&copy; 2026 ClimaFuturo. Sitio elaborado con fines académicos.</p>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
